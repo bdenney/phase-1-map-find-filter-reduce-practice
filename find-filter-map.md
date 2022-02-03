@@ -1,5 +1,9 @@
 # Extra Practice for Find, Filter, Map
 
+## This will work differently from a lab! Just print out your results in console.log()!
+
+---
+
 - Create a function called `findMichael` that returns an array of the movies in `HALLOWEEN_MOVIES` that contain the string `Michael Myers`. You **must** use `array.filter()`!
 
 - Create a function called `newHalloweenMovies` that takes one argument called that is a year. Return an array of all movies that were released **after** the given year. You **must** use `array.filter()`!
