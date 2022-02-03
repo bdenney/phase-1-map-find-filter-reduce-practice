@@ -15,32 +15,3 @@ const HALLOWEEN_MOVIES = [
     { name: "Halloween Ends", release_year: 2022 }
 ]
 
-function findMichael() {
-    return HALLOWEEN_MOVIES.filter(movie => movie.name.includes("Michael Myers"));
-}
-
-function newHalloweenMovies(year) {
-    return HALLOWEEN_MOVIES.filter(movie => movie.release_year > year);
-}
-
-function dontCountMichael() {
-    return HALLOWEEN_MOVIES.reduce((previous, current) => {
-        if (!current.name.includes("Michael Myers")) {
-            return previous + 1;
-        } else {
-            return previous;
-        }
-    });
-}
-
-function theLastWord() {
-    return HALLOWEEN_MOVIES.map(item => {
-        itemArr = item.name.split(' ');
-        return itemArr[itemArr.length - 1];
-    });
-}
-
-console.log(findMichael());
-console.log(newHalloweenMovies(2000));
-console.log(dontCountMichael());
-console.log(theLastWord());
