@@ -15,6 +15,10 @@ const HALLOWEEN_MOVIES = [
     { name: "Halloween Ends", release_year: 2022 }
 ]
 
+function firstHalloweenAfter(year) {
+    return HALLOWEEN_MOVIES.find(movie => movie.year >= year);
+}
+
 function findMichael() {
     return HALLOWEEN_MOVIES.filter(movie => movie.name.includes("Michael Myers"));
 }
@@ -33,6 +37,14 @@ function dontCountMichael() {
     });
 }
 
+function averageYear() {
+    yearSum = HALLOWEEN_MOVIES.reduce((previous, current) => {
+      return previous + current.release_year;
+    }, 0);
+  
+    return yearSum / HALLOWEEN_MOVIES.length
+  }
+
 function theLastWord() {
     return HALLOWEEN_MOVIES.map(item => {
         itemArr = item.name.split(' ');
@@ -40,6 +52,7 @@ function theLastWord() {
     });
 }
 
+console.log(firstHalloweenAfter(1985));
 console.log(findMichael());
 console.log(newHalloweenMovies(2000));
 console.log(dontCountMichael());
