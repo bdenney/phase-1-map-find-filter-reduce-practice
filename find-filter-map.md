@@ -10,6 +10,6 @@
 
 - Create a function called `dontCountMichael` that returns the count of movies that **do not** have the string `Michael Myers` in the name. You **must** use `array.reduce()`!
 
-- Create a function called `averageYear` that returns the average of the year of all movies in `HALLOWEEN_MOVIES`.
+- Create a function called `averageYear` that returns the average of the year of all movies in `HALLOWEEN_MOVIES`. You **must** use `array.reduce()`!
 
 - Create a function called `theLastWord` that returns the last word of each movie in `HALLOWEEN_MOVIES`. You **must** use `array.map()`!
